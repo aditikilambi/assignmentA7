@@ -1,0 +1,87 @@
+form {
+	padding-left: 20%;
+	background-color: #6E963B;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-right: 20%;
+	margin: 0;
+}
+
+form p {
+	color: black;
+	margin: 0 0 20px;
+}
+
+form input {
+	/* "no file chosen" should be white but is grey b/c of input*/
+	color: black;
+}
+
+textarea {
+	color: black;
+}
+
+::placeholder {
+  color: #B6B1A9;
+}
+
+.form-group {
+	margin-left: 0;
+}
+
+
+#description {
+	width: 70%;
+	height: 100px;
+}
+
+#location {
+	width: 70%;
+}
+
+#long-description {
+	width: 70%;
+	height: 200px;
+}
+
+#tags {
+	width: 70%;
+	height: 50px;
+}
+
+.buttontags {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 3px;
+    background-color: #36491d;
+    cursor: pointer;
+    padding: 3px;
+    margin-bottom: 2px;
+}
+
+.buttontags:hover {
+	box-shadow: gray;
+	background-color: #1b250e;
+}
+
+/* necessary?
+#submit {
+	color: black;
+} */
+
+/*stretch goal to make submit button same color as upcoming events tab*/
+/* .submitButton {
+	same as my events
+  background-color: #00C6D7;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+} */

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "eventfinder-1e474"
+  },
+  "targets": {
+    "eventfinder-1e474": {
+      "hosting": {
+        "eventfinder": [
+          "eventfinderupdate"
+        ]
+      }
+    }
+  }
+}

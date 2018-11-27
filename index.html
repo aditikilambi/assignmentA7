@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>EventFinder Login Screen</title>
+
+      <!--    Importing Stylesheets    -->
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="css/tabs.css" rel="stylesheet">
+      <link href="css/pageHeader.css" rel="stylesheet">
+      <link href="css/events.css" rel="stylesheet">
+      <link href="css/login.css" rel="stylesheet">
+      <!--adding Roboto font family-->
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  </head>
+
+  <body>
+      <script src="js/login.js"></script>
+      <script>
+        localStorage.setItem('firstTime', 'true');
+      </script>
+      <div class = 'jumbotron' id='pageHeader'>
+        <h1>EventFinder</h1>
+        <h3>Login</h3>
+      </div>
+        <div id="container">
+        <form onSubmit="return logIn();" method="post" action='./myEvents.html'>
+            <label for="username">
+                Username:
+            </label>
+            <input type="text" id="username" name="username">
+            <label for="password">
+                Password:
+            </label>
+            <input type="password" id="password" name="password">
+            <div id="bottom">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        </div>
+
+  </body>
+</html>
+<!-- action='./myEvents.html' -->

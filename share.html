@@ -1,0 +1,76 @@
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Share Page</title>
+
+      <!--    Importing Stylesheets    -->
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="css/tabs.css" rel="stylesheet">
+      <link href="css/pageHeader.css" rel="stylesheet">
+
+      <!--test to get popover-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <!--- Stylesheet for share icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+
+  <body style='background-color: white'>
+    <div class = 'jumbotron' id='pageHeader'>
+      <h1>EventFinder</h1>
+      <h3>Share with your friends!</h3>
+    </div>
+
+    <div>
+<!--       <script src="js/share.js"></script>
+ -->    </div>
+
+      <!-- Creation of side nav bar -->
+
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)"  onclick="closeNav()">&times;</a>
+        <a>Search Bar, Currently a Placeholder</a>
+        <a href='./upcoming.html'><button>Search</button></a>
+      </div>
+
+
+      <!--  Making the My events, Upcoming, and create event tabs  -->
+
+      <div class="tab">
+          <div class="tablinks" id='myEvents'><a href="./myEvents.html"><button><p>My Events</p></button></a></div>
+          <div class="tablinks" id='upcoming'><a href="./upcoming.html"><button><p>Upcoming Events</p></button></a></div>
+          <div  class="tablinks" id='create'><a href="./createEvent.html"><button><p>Create Event</p></button></a></div>
+      </div>
+
+    <div id="pgContent">
+      <div style="margin-right:10%; padding: 15px;">
+        <!-- <p style="padding:15px;">
+          (short url will display here). <b>This will probably become a pop-up window in the future</b>
+          <br>
+          <br>
+        </p>
+          (clicking the images will lead to default pages of Facebook and Gmail, respectively) -->
+
+        <p><a href='./upcoming.html'>Back to Upcoming</a></p>
+        <p><a href='./myEvents.html'>Back to My Events</a></p>
+
+        <!--works just need to customize-->
+        <!--need to figure out how to incorporate into js file-->
+        <button><a href="#" data-trigger="focus" data-toggle="popover" title="Share" data-html="true" data-placement="bottom"><i class='fa fa-share-alt' style='font-size:24px'></i></button></a>
+
+
+        <button><a href="#" data-trigger="focus" data-toggle="popover" title="Share" data-html="true" data-placement="bottom" data-content="<a href='https://facebook.com'><img src='images/fb512.png' alt='share with Facebook' width='42'/><a/>&emsp;&emsp;<a href='https://gmail.com'><img src='images/gmail.png' alt='share through Gmail' width='42'/>"><i class='fa fa-share-alt' style='font-size:24px'></i></button></a>
+
+      </div>
+    </div>
+    <!--    Importing Bootstrap Scripts    -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Corresponds to the Regular 400 style */
+}
+/* Style the tab */
+.tab {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    /* align-content: center; */
+    text-align: center;
+}
+
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tablinks {
+    width: 33.333%;
+}
+
+.tab #myEvents {
+    background-color: #00C6D7;
+}
+
+.tab #upcoming {
+    background-color: #FFCD00;
+}
+
+.tab #create {
+    background-color: #6E963B;
+}
+
+.tablinks p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Nav bar css */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #B6B1A9;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav p {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+#closeSearch {
+    float: right;
+    padding-right: 20px;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    float: right;
+}
+
+#openNav {
+    float: right;
+    font-weight: bold;
+    font-size: 50px;
+    padding-right: 10%;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#openNav:hover{
+    color: grey;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+input {
+
+    color: #B6B1A9;
+    margin: 0 auto;
+
+}
+
+select {
+    width: 200px;
+}
+
+#recs {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
